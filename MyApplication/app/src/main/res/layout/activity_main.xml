@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0BB990"
+    tools:context="com.example.camilih.myapplication.MainActivity">
+
+    <Button
+        android:text="Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/butSave"
+        android:layout_above="@+id/tvNet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:onClick="saveInfo"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:text="No Internet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tvNet"
+        android:layout_marginBottom="27dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:text="Cardiovascular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/colorAccent"
+        android:textSize="25sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:id="@+id/cb1"
+        android:text="HighBloodpressure"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignLeft="@+id/textView" />
+
+    <CheckBox
+        android:text="Low Blood pressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:id="@+id/cb2"
+        android:layout_below="@+id/cb1"
+        android:layout_alignStart="@+id/cb1"
+        android:layout_alignLeft="@+id/cb1" />
+
+    <CheckBox
+        android:text="Chronic congestive heart failure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:id="@+id/cb3"
+
+        android:layout_below="@+id/cb2"
+        android:layout_alignStart="@+id/cb2"
+        android:layout_alignLeft="@+id/cb2" />
+
+    <CheckBox
+        android:text="Heart attack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/cb4"
+        android:layout_below="@+id/cb3"
+        android:layout_alignStart="@+id/cb3"
+        android:layout_alignLeft="@+id/cb3" />
+
+    <CheckBox
+        android:text="phlebitis /varicose veins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb5"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/cb4"
+        android:layout_alignLeft="@+id/cb4" />
+
+    <CheckBox
+        android:text="stroke/CVA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:id="@+id/cb6"
+
+        android:layout_below="@+id/cb5"
+        android:layout_alignStart="@+id/cb5"
+        android:layout_alignLeft="@+id/cb5" />
+
+    <CheckBox
+        android:text="heart disease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:id="@+id/cb7"
+        android:layout_below="@+id/cb6"
+        android:layout_alignStart="@+id/cb6"
+        android:layout_alignLeft="@+id/cb6" />
+</RelativeLayout>
